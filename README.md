@@ -27,7 +27,7 @@ Welcome to my personal developer portfolio — a responsive, single-page website
 
 ## 📷 Screenshots
 
-![preview img](/preview.png)
+![preview img](preview.png)
 
 ---
 
