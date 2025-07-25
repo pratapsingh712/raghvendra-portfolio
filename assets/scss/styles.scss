@@ -120,7 +120,7 @@ img{
     align-items: center;
     font-weight: var(--font-semi);
 
-    &__menu{
+    &__.nav__menu {
         @media screen and (max-width: 767px){
             position: fixed;
             top: var(--header-height);
@@ -128,10 +128,12 @@ img{
             width: 80%;
             height: 100%;
             padding: 2rem;
-            background-color: var(--second-color);
+            background-color: rgba(0, 0, 0, 0.6); 
+            backdrop-filter: blur(8px);
             transition: .5s;
         }
     }
+
     &__item{
         margin-bottom: var(--mb-4);
     }
