@@ -450,6 +450,80 @@ img {
   margin: 0 auto;
 }
 
+/* ===== RESUME CARD ===== */
+.resume-card {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.resume-card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.resume-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+}
+
+.resume-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(var(--hue-color), 56%, 12%, 0.7);
+  /* semi-transparent overlay */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.resume-card:hover .resume-overlay {
+  opacity: 1;
+}
+
+.resume-message {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: var(--font-semi);
+  padding: 1rem;
+}
+
+.resume.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* ===== FOOTER =====*/
 .footer {
   background-color: var(--second-color);
